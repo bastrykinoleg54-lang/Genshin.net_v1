@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440" fill="none">
+  <defs>
+    <linearGradient id="space" x1="44" y1="14" x2="685" y2="451" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17162C"/>
+      <stop offset=".53" stop-color="#292743"/>
+      <stop offset="1" stop-color="#101522"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="290" y1="97" x2="446" y2="328" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCF8EF"/>
+      <stop offset=".62" stop-color="#C9D3E9"/>
+      <stop offset="1" stop-color="#8798B8"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="363" y1="277" x2="363" y2="413" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F6A4"/>
+      <stop offset=".42" stop-color="#FFAA70"/>
+      <stop offset="1" stop-color="#EF6F76" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="planet" x1="70" y1="72" x2="212" y2="198" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDBA91"/>
+      <stop offset="1" stop-color="#B96882"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="720" height="440" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+  </defs>
+  <path fill="url(#space)" d="M0 0h720v440H0z"/>
+  <circle cx="142" cy="135" r="92" fill="#ED8A9F" opacity=".15" filter="url(#glow)"/>
+  <circle cx="142" cy="135" r="67" fill="url(#planet)"/>
+  <path d="M83 145c38-19 76-20 117-7M94 167c30-12 57-12 91-3" stroke="#FFD6BC" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#EFF1FF">
+    <circle cx="293" cy="62" r="2"/><circle cx="502" cy="72" r="2"/><circle cx="643" cy="121" r="2"/>
+    <circle cx="580" cy="227" r="1.5"/><circle cx="223" cy="215" r="1.5"/><circle cx="86" cy="281" r="2"/>
+    <circle cx="522" cy="337" r="1.5"/><circle cx="633" cy="352" r="1"/><circle cx="270" cy="364" r="1.5"/>
+  </g>
+  <path d="M338 273h51l24 128-49-48-50 48 24-128Z" fill="url(#flame)" opacity=".9"/>
+  <path d="M364 73c-40 37-63 99-63 155v51h126v-51c0-56-23-118-63-155Z" fill="url(#hull)"/>
+  <path d="M364 73c-20 24-33 56-42 89h84c-9-33-22-65-42-89Z" fill="#F5F7FC"/>
+  <path d="M336 194h56v76h-56z" fill="#6F83AB"/>
+  <path d="M342 201h44v29h-44z" fill="#9EDBF7"/>
+  <path d="M342 237h44v26h-44z" fill="#334560"/>
+  <path d="M304 234c-30 13-48 39-54 75 23-4 47-15 65-30v-45h-11Z" fill="#E77E88"/>
+  <path d="M424 234c30 13 48 39 54 75-23-4-47-15-65-30v-45h11Z" fill="#E77E88"/>
+  <path d="M322 266h84v20h-84z" fill="#D7F46F"/>
+  <path d="M340 284h48l-24 39-24-39Z" fill="#FFCE77"/>
+  <path d="M172 346c107-31 266-31 382 2" stroke="#A8B8E9" stroke-opacity=".28" stroke-width="2" stroke-dasharray="5 10"/>
+  <path d="M565 88v22m-11-11h22" stroke="#D7F46F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M229 112v16m-8-8h16" stroke="#F9A783" stroke-width="2" stroke-linecap="round"/>
+  <path d="M532 284v16m-8-8h16" stroke="#D7F46F" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070910">
+  <title>перевозка грузов.мкс — цифровые услуги</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html"><span class="brand-symbol">✦</span>перевозка грузов.мкс</a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a class="active" href="index.html">Главная</a><a href="catalog.html">Услуги</a><a href="seller.html">Продавцы</a>
+    </nav>
+    <div class="header-actions"><a class="icon-link" href="catalog.html" aria-label="Поиск"><span class="search-icon"></span></a><button class="button button-dark header-login" data-open-auth>Войти <span class="arrow">↗</span></button></div>
+  </header>
+
+  <main class="expedition-main">
+    <section class="earthrise-sequence" data-earthrise aria-label="Путь от идеи до запуска проекта">
+      <div class="earthrise-pin">
+        <div class="earthrise-layers" aria-hidden="true">
+          <picture class="earthrise-layer layer-sky"><source media="(max-width: 620px)" srcset="public/layers/m/sky.webp"><img src="public/layers/d/sky.webp" alt=""></picture>
+          <picture class="earthrise-layer layer-earth" data-earth-layer><source media="(max-width: 620px)" srcset="public/layers/m/earth.webp"><img src="public/layers/d/earth.webp" alt=""></picture>
+          <picture class="earthrise-layer layer-moonscape" data-moon-layer><source media="(max-width: 620px)" srcset="public/layers/m/moonscape.webp"><img src="public/layers/d/moonscape.webp" alt=""></picture>
+          <picture class="earthrise-layer layer-frame"><source media="(max-width: 620px)" srcset="public/layers/m/frame.webp"><img src="public/layers/d/frame.webp" alt=""></picture>
+          <picture class="earthrise-layer layer-astronaut" data-astronaut-layer><source media="(max-width: 620px)" srcset="public/layers/m/astronaut.webp"><img src="public/layers/d/astronaut.webp" alt=""></picture>
+          <picture class="earthrise-layer layer-ground" data-ground-layer><source media="(max-width: 620px)" srcset="public/layers/m/ground.webp"><img src="public/layers/d/ground.webp" alt=""></picture>
+        </div>
+        <div class="earthrise-dust" data-dust></div>
+        <header class="earthrise-hud" aria-label="Телеметрия миссии">
+          <span>ПЕРЕВОЗКА ГРУЗОВ.МКС / МИССИЯ 001</span><span>КООРДИНАТЫ <b>00° 00′ 00″</b></span>
+        </header>
+        <div class="earthrise-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>ЭКИПАЖ ДЛЯ ВАШИХ ИДЕЙ</div>
+          <h1>ИДЕЯМ НУЖЕН<br><em>СВОЙ ЭКИПАЖ.</em></h1>
+          <p>Найдите специалиста, который поможет пройти путь от первого замысла до уверенного запуска.</p>
+          <a class="button button-lime" href="catalog.html">Выбрать направление <span class="arrow">↗</span></a>
+        </div>
+        <div class="earthrise-readout readout-left"><span>ВЫСОТА ЗЕМЛИ</span><b data-earth-altitude>00.0°</b></div>
+        <div class="earthrise-readout readout-right"><span>ДИСТАНЦИЯ МИССИИ</span><b><span data-distance>0</span> / 4,37 СВ. ГОДА</b></div>
+        <div class="earthrise-bottomline"><span data-mission-phase>01 / СТАРТ</span><span>ПРОКРУТИТЕ, ЧТОБЫ ОТКРЫТЬ НОВЫЙ ГОРИЗОНТ <i>↓</i></span></div>
+        <div class="earthrise-progress"><span data-earthrise-progress></span></div>
+      </div>
+    </section>
+
+    <section class="transport-section" aria-labelledby="transport-title">
+      <div class="transport-wrap">
+        <div class="eyebrow"><span class="eyebrow-dot"></span>ФЛОТ ПЕРЕВОЗОК</div>
+        <h2 id="transport-title">Выберите транспорт</h2>
+        <p class="transport-intro">Для каждой миссии — свой способ доставки.</p>
+        <div class="transport-tabs" role="tablist" aria-label="Выбор транспорта">
+          <button class="transport-tab is-active" id="tab-truck" type="button" role="tab" aria-selected="true" aria-controls="panel-truck" tabindex="0">Галактическая фура</button>
+          <button class="transport-tab" id="tab-rocket" type="button" role="tab" aria-selected="false" aria-controls="panel-rocket" tabindex="-1">Межгалактическая ракета</button>
+        </div>
+        <div class="transport-panel" id="panel-truck" role="tabpanel" aria-labelledby="tab-truck">
+          <div class="transport-visual"><img class="transport-art-truck" src="public/media/transports/galactic-truck.svg" alt="Галактическая фура на фоне планеты и звёзд"><span aria-hidden="true">✦　·　✧</span></div>
+          <div class="transport-copy"><span class="transport-kicker">НАДЁЖНО И ПРОСТОРНО</span><h3>Галактическая фура</h3><p>Для крупных грузов и дальних маршрутов между планетами. Спокойно доставит ваш груз через звёздные системы.</p><div class="transport-range"><span>ПРЕДЕЛ ПЕРЕВОЗКИ</span><strong>50 <small>световых лет</small></strong></div><span class="transport-status"><i></i>Выбрана для перевозки</span></div>
+        </div>
+        <div class="transport-panel" id="panel-rocket" role="tabpanel" aria-labelledby="tab-rocket" hidden>
+          <div class="transport-visual transport-visual-rocket"><img class="transport-art-rocket" src="public/media/transports/intergalactic-rocket.svg" alt="Межгалактическая ракета летит среди звёзд"><span aria-hidden="true">✦　·　✧</span></div>
+          <div class="transport-copy"><span class="transport-kicker">БЫСТРО К ДАЛЬНИМ МИРАМ</span><h3>Межгалактическая ракета</h3><p>Для срочных посылок и особо важных грузов. Выбирайте ракету, когда нужно отправиться за пределы галактики.</p><div class="transport-range"><span>ПРЕДЕЛ ПЕРЕВОЗКИ</span><strong>500 <small>световых лет</small></strong></div><span class="transport-status"><i></i>Выбрана для перевозки</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trajectory-sequence" data-trajectory>
+      <div class="trajectory-pin">
+        <div class="trajectory-copy"><div class="eyebrow"><span class="eyebrow-dot"></span>МАРШРУТ МИССИИ</div><h2>От первой идеи<br>до <em>большого запуска.</em></h2><p>Путь проекта становится короче, когда рядом нужные специалисты.</p></div>
+        <div class="trajectory-map" aria-label="Этапы работы над проектом">
+          <svg viewBox="0 0 1000 220" role="img" aria-label="Маршрут от идеи к запуску"><path class="trajectory-track" data-route-track d="M40 160 C 170 160 180 55 320 75 C 430 130 500 190 610 132 C 730 165 830 20 960 70" pathLength="1000"></path><path class="trajectory-progress" data-trajectory-path d="M40 160 C 170 160 180 55 320 75 C 430 130 500 190 610 132 C 730 165 830 20 960 70" pathLength="1000"></path><circle class="trajectory-node" cx="40" cy="160" r="8"></circle><circle class="trajectory-node" cx="320" cy="75" r="8"></circle><circle class="trajectory-node" cx="610" cy="132" r="8"></circle><circle class="trajectory-node" cx="960" cy="70" r="8"></circle></svg>
+          <div class="trajectory-stops"><span><b>01</b> ИДЕЯ</span><span><b>02</b> ЭКИПАЖ</span><span><b>03</b> ОРБИТА</span><span><b>04</b> ЗАПУСК</span></div>
+        </div>
+        <div class="route-curve-control"><label for="route-curve">Изгиб маршрута <output data-route-curve-value for="route-curve">50%</output></label><input id="route-curve" type="range" min="0" max="100" value="50" aria-label="Изгиб маршрута" aria-describedby="route-curve-help"><span id="route-curve-help">Переместите ползунок, чтобы изменить форму линии</span></div>
+        <div class="trajectory-distance"><strong><span data-route-distance>0</span> св. года</strong><span>4,37 светового года до нового горизонта</span></div>
+      </div>
+    </section>
+
+    <section class="mission-reel" data-mission-reel>
+      <div class="mission-reel-pin">
+        <div class="mission-reel-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span>ЖУРНАЛ МИССИИ</div><h2>Шаг за шагом.<br><em>Вместе с экипажем.</em></h2></div><span class="mission-reel-count">ЛИСТАЙТЕ МАРШРУТ <b>↘</b></span></div>
+        <div class="mission-track" data-mission-track>
+          <article class="mission-card" data-mission-card><img src="public/media/cards/m1-launch.webp" alt="Старт ракеты к Луне"><div class="mission-card-copy"><span>01 / СТАРТ</span><h3>Задайте курс</h3><p>Опишите идею, выберите направление и найдите специалиста под свою задачу.</p><a href="catalog.html">Все направления <span>↗</span></a></div></article>
+          <article class="mission-card" data-mission-card><img src="public/media/cards/m2-orbit.webp" alt="Корабль на орбите Земли"><div class="mission-card-copy"><span>02 / ОРБИТА</span><h3>Соберите экипаж</h3><p>Дизайнеры, разработчики и авторы присоединяются к проекту на нужном этапе.</p><a href="catalog.html?category=Дизайн">Найти дизайнера <span>↗</span></a></div></article>
+          <article class="mission-card" data-mission-card><img src="public/media/cards/m3-base.webp" alt="Лунная исследовательская база"><div class="mission-card-copy"><span>03 / БАЗА</span><h3>Постройте основу</h3><p>Создайте айдентику, сайт и контент, на которых будет держаться запуск.</p><a href="service.html?id=landing">Смотреть услуги <span>↗</span></a></div></article>
+          <article class="mission-card" data-mission-card><img src="public/media/cards/m4-walk.webp" alt="Астронавты исследуют поверхность Луны"><div class="mission-card-copy"><span>04 / ПЕРВЫЙ ШАГ</span><h3>Выходите на орбиту</h3><p>Запустите проект с командой, которая знает, куда двигаться дальше.</p><a href="catalog.html?category=Продвижение">Продвижение <span>↗</span></a></div></article>
+        </div>
+        <div class="mission-reel-progress"><span data-reel-progress></span></div>
+      </div>
+    </section>
+
+    <section class="category-band"><div class="wrap"><div class="section-heading"><div><div class="eyebrow">КЛАССЫ МИССИЙ</div><h2>Выберите направление</h2></div><a class="text-link" href="catalog.html">Все услуги <span>↗</span></a></div>
+      <div class="category-grid">
+        <a class="category-tile tile-design" href="catalog.html?category=Дизайн"><span class="tile-index">01 / VISUAL</span><span class="tile-icon">✳</span><b>Дизайн</b><small>Айдентика, сайты, графика</small><span class="tile-arrow">↗</span></a>
+        <a class="category-tile tile-content" href="catalog.html?category=Контент"><span class="tile-index">02 / SIGNAL</span><span class="tile-icon">Aa</span><b>Контент</b><small>Тексты, фото, видео</small><span class="tile-arrow">↗</span></a>
+        <a class="category-tile tile-tech" href="catalog.html?category=Разработка"><span class="tile-index">03 / ORBIT</span><span class="tile-icon">⌘</span><b>Разработка</b><small>Сайты, боты, автоматизация</small><span class="tile-arrow">↗</span></a>
+        <a class="category-tile tile-promo" href="catalog.html?category=Продвижение"><span class="tile-index">04 / LIFTOFF</span><span class="tile-icon">↗</span><b>Продвижение</b><small>Стратегия, реклама, рост</small><span class="tile-arrow">↗</span></a>
+      </div>
+    </div></section>
+
+    <section class="wrap featured-section"><div class="section-heading"><div><div class="eyebrow">ЭКИПАЖ УЖЕ НА СВЯЗИ</div><h2>Предложения специалистов</h2></div><a class="text-link" href="catalog.html">Весь каталог <span>↗</span></a></div><div class="service-grid" data-service-grid="featured"></div></section>
+
+    <section class="manifesto"><div class="wrap manifesto-inner"><span class="manifesto-star">✳</span><div><div class="eyebrow">СВЯЗЬ С ЗЕМЛЕЙ УСТАНОВЛЕНА</div><h2>Хорошие идеи не должны<br><span>оставаться на орбите.</span></h2></div><a class="button button-outline" href="catalog.html">Найти экипаж <span class="arrow">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="index.html"><span class="brand-symbol">✦</span>перевозка грузов.мкс</a><span>Цифровые услуги, сделанные людьми.</span><span>© перевозка грузов.мкс, 2025</span></footer>
+</body>
+</html>
